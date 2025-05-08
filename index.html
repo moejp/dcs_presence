@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Power BI Auto-Refresh</title>
+    <script type="text/javascript">
+        function refreshReport() {
+            var iframe = document.getElementById('powerBIReport');
+            iframe.src = iframe.src;
+        }
+
+        setInterval(refreshReport, 10000); // Refresh every 10 seconds
+    </script>
+</head>
+<body>
+    <iframe id="powerBIReport" width="100%" height="800px" 
+        src="https://app.powerbi.com/reportEmbed?reportId=a1e0595f-d797-4769-80de-055577da7741&e56c04940c922ec0c19a" 
+        frameborder="0" allowFullScreen="true"></iframe>
+</body>
+</html>
